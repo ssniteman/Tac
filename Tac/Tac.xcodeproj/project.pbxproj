@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60503DC01987DAF8000C6A70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60503DBF1987DAF8000C6A70 /* Foundation.framework */; };
+		60503DC21987DAF8000C6A70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60503DC11987DAF8000C6A70 /* CoreGraphics.framework */; };
+		60503DC41987DAF8000C6A70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60503DC31987DAF8000C6A70 /* UIKit.framework */; };
+		60503DCA1987DAF8000C6A70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60503DC81987DAF8000C6A70 /* InfoPlist.strings */; };
+		60503DCC1987DAF8000C6A70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60503DCB1987DAF8000C6A70 /* main.m */; };
+		60503DD01987DAF8000C6A70 /* TTTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60503DCF1987DAF8000C6A70 /* TTTAppDelegate.m */; };
+		60503DD21987DAF8000C6A70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60503DD11987DAF8000C6A70 /* Images.xcassets */; };
+		60503DD91987DAF8000C6A70 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60503DD81987DAF8000C6A70 /* XCTest.framework */; };
+		60503DDA1987DAF8000C6A70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60503DBF1987DAF8000C6A70 /* Foundation.framework */; };
+		60503DDB1987DAF8000C6A70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60503DC31987DAF8000C6A70 /* UIKit.framework */; };
+		60503DE31987DAF8000C6A70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60503DE11987DAF8000C6A70 /* InfoPlist.strings */; };
+		60503DE51987DAF8000C6A70 /* TacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60503DE41987DAF8000C6A70 /* TacTests.m */; };
+		60503DF11987DC27000C6A70 /* TTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60503DF01987DC27000C6A70 /* TTTViewController.m */; };
+		60503DF51987DD45000C6A70 /* TTTTouchSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = 60503DF41987DD45000C6A70 /* TTTTouchSpot.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60503DDC1987DAF8000C6A70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60503DB41987DAF8000C6A70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60503DBB1987DAF8000C6A70;
+			remoteInfo = Tac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		60503DBC1987DAF8000C6A70 /* Tac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60503DBF1987DAF8000C6A70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60503DC11987DAF8000C6A70 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		60503DC31987DAF8000C6A70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		60503DC71987DAF8000C6A70 /* Tac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tac-Info.plist"; sourceTree = "<group>"; };
+		60503DC91987DAF8000C6A70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60503DCB1987DAF8000C6A70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60503DCD1987DAF8000C6A70 /* Tac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tac-Prefix.pch"; sourceTree = "<group>"; };
+		60503DCE1987DAF8000C6A70 /* TTTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTTAppDelegate.h; sourceTree = "<group>"; };
+		60503DCF1987DAF8000C6A70 /* TTTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTAppDelegate.m; sourceTree = "<group>"; };
+		60503DD11987DAF8000C6A70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		60503DD71987DAF8000C6A70 /* TacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60503DD81987DAF8000C6A70 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		60503DE01987DAF8000C6A70 /* TacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TacTests-Info.plist"; sourceTree = "<group>"; };
+		60503DE21987DAF8000C6A70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60503DE41987DAF8000C6A70 /* TacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TacTests.m; sourceTree = "<group>"; };
+		60503DEF1987DC27000C6A70 /* TTTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTViewController.h; path = Tac/TTTViewController.h; sourceTree = "<group>"; };
+		60503DF01987DC27000C6A70 /* TTTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTViewController.m; path = Tac/TTTViewController.m; sourceTree = "<group>"; };
+		60503DF31987DD45000C6A70 /* TTTTouchSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTTouchSpot.h; path = Tac/TTTTouchSpot.h; sourceTree = "<group>"; };
+		60503DF41987DD45000C6A70 /* TTTTouchSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTTouchSpot.m; path = Tac/TTTTouchSpot.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60503DB91987DAF8000C6A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60503DC21987DAF8000C6A70 /* CoreGraphics.framework in Frameworks */,
+				60503DC41987DAF8000C6A70 /* UIKit.framework in Frameworks */,
+				60503DC01987DAF8000C6A70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60503DD41987DAF8000C6A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60503DD91987DAF8000C6A70 /* XCTest.framework in Frameworks */,
+				60503DDB1987DAF8000C6A70 /* UIKit.framework in Frameworks */,
+				60503DDA1987DAF8000C6A70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60503DB31987DAF8000C6A70 = {
+			isa = PBXGroup;
+			children = (
+				60503DEE1987DBC4000C6A70 /* Controllers */,
+				60503DC51987DAF8000C6A70 /* Tac */,
+				60503DDE1987DAF8000C6A70 /* TacTests */,
+				60503DBE1987DAF8000C6A70 /* Frameworks */,
+				60503DBD1987DAF8000C6A70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60503DBD1987DAF8000C6A70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60503DBC1987DAF8000C6A70 /* Tac.app */,
+				60503DD71987DAF8000C6A70 /* TacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60503DBE1987DAF8000C6A70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60503DBF1987DAF8000C6A70 /* Foundation.framework */,
+				60503DC11987DAF8000C6A70 /* CoreGraphics.framework */,
+				60503DC31987DAF8000C6A70 /* UIKit.framework */,
+				60503DD81987DAF8000C6A70 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60503DC51987DAF8000C6A70 /* Tac */ = {
+			isa = PBXGroup;
+			children = (
+				60503DCE1987DAF8000C6A70 /* TTTAppDelegate.h */,
+				60503DCF1987DAF8000C6A70 /* TTTAppDelegate.m */,
+				60503DD11987DAF8000C6A70 /* Images.xcassets */,
+				60503DC61987DAF8000C6A70 /* Supporting Files */,
+			);
+			path = Tac;
+			sourceTree = "<group>";
+		};
+		60503DC61987DAF8000C6A70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60503DC71987DAF8000C6A70 /* Tac-Info.plist */,
+				60503DC81987DAF8000C6A70 /* InfoPlist.strings */,
+				60503DCB1987DAF8000C6A70 /* main.m */,
+				60503DCD1987DAF8000C6A70 /* Tac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60503DDE1987DAF8000C6A70 /* TacTests */ = {
+			isa = PBXGroup;
+			children = (
+				60503DE41987DAF8000C6A70 /* TacTests.m */,
+				60503DDF1987DAF8000C6A70 /* Supporting Files */,
+			);
+			path = TacTests;
+			sourceTree = "<group>";
+		};
+		60503DDF1987DAF8000C6A70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60503DE01987DAF8000C6A70 /* TacTests-Info.plist */,
+				60503DE11987DAF8000C6A70 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60503DEE1987DBC4000C6A70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				60503DEF1987DC27000C6A70 /* TTTViewController.h */,
+				60503DF01987DC27000C6A70 /* TTTViewController.m */,
+				60503DF21987DD15000C6A70 /* Views */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		60503DF21987DD15000C6A70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60503DF31987DD45000C6A70 /* TTTTouchSpot.h */,
+				60503DF41987DD45000C6A70 /* TTTTouchSpot.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60503DBB1987DAF8000C6A70 /* Tac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60503DE81987DAF8000C6A70 /* Build configuration list for PBXNativeTarget "Tac" */;
+			buildPhases = (
+				60503DB81987DAF8000C6A70 /* Sources */,
+				60503DB91987DAF8000C6A70 /* Frameworks */,
+				60503DBA1987DAF8000C6A70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tac;
+			productName = Tac;
+			productReference = 60503DBC1987DAF8000C6A70 /* Tac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60503DD61987DAF8000C6A70 /* TacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60503DEB1987DAF8000C6A70 /* Build configuration list for PBXNativeTarget "TacTests" */;
+			buildPhases = (
+				60503DD31987DAF8000C6A70 /* Sources */,
+				60503DD41987DAF8000C6A70 /* Frameworks */,
+				60503DD51987DAF8000C6A70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60503DDD1987DAF8000C6A70 /* PBXTargetDependency */,
+			);
+			name = TacTests;
+			productName = TacTests;
+			productReference = 60503DD71987DAF8000C6A70 /* TacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60503DB41987DAF8000C6A70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TTT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Shane Sniteman";
+				TargetAttributes = {
+					60503DD61987DAF8000C6A70 = {
+						TestTargetID = 60503DBB1987DAF8000C6A70;
+					};
+				};
+			};
+			buildConfigurationList = 60503DB71987DAF8000C6A70 /* Build configuration list for PBXProject "Tac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 60503DB31987DAF8000C6A70;
+			productRefGroup = 60503DBD1987DAF8000C6A70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60503DBB1987DAF8000C6A70 /* Tac */,
+				60503DD61987DAF8000C6A70 /* TacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60503DBA1987DAF8000C6A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60503DCA1987DAF8000C6A70 /* InfoPlist.strings in Resources */,
+				60503DD21987DAF8000C6A70 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60503DD51987DAF8000C6A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60503DE31987DAF8000C6A70 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60503DB81987DAF8000C6A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60503DF11987DC27000C6A70 /* TTTViewController.m in Sources */,
+				60503DCC1987DAF8000C6A70 /* main.m in Sources */,
+				60503DF51987DD45000C6A70 /* TTTTouchSpot.m in Sources */,
+				60503DD01987DAF8000C6A70 /* TTTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60503DD31987DAF8000C6A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60503DE51987DAF8000C6A70 /* TacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60503DDD1987DAF8000C6A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60503DBB1987DAF8000C6A70 /* Tac */;
+			targetProxy = 60503DDC1987DAF8000C6A70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60503DC81987DAF8000C6A70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60503DC91987DAF8000C6A70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		60503DE11987DAF8000C6A70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60503DE21987DAF8000C6A70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60503DE61987DAF8000C6A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		60503DE71987DAF8000C6A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60503DE91987DAF8000C6A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tac/Tac-Prefix.pch";
+				INFOPLIST_FILE = "Tac/Tac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		60503DEA1987DAF8000C6A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tac/Tac-Prefix.pch";
+				INFOPLIST_FILE = "Tac/Tac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		60503DEC1987DAF8000C6A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tac.app/Tac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tac/Tac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TacTests/TacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		60503DED1987DAF8000C6A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tac.app/Tac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tac/Tac-Prefix.pch";
+				INFOPLIST_FILE = "TacTests/TacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60503DB71987DAF8000C6A70 /* Build configuration list for PBXProject "Tac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60503DE61987DAF8000C6A70 /* Debug */,
+				60503DE71987DAF8000C6A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60503DE81987DAF8000C6A70 /* Build configuration list for PBXNativeTarget "Tac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60503DE91987DAF8000C6A70 /* Debug */,
+				60503DEA1987DAF8000C6A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60503DEB1987DAF8000C6A70 /* Build configuration list for PBXNativeTarget "TacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60503DEC1987DAF8000C6A70 /* Debug */,
+				60503DED1987DAF8000C6A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60503DB41987DAF8000C6A70 /* Project object */;
+}
