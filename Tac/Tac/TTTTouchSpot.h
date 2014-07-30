@@ -12,4 +12,6 @@
 
 // property int player = 0   and as you touch it, needs to equal 1 or 2 depending on player's turn
 
+@property (nonatomic) int player;
+
 @end

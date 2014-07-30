@@ -15,9 +15,20 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        
+        // add a uiimageview
     }
     return self;
 }
+
+
+// player setter method will change image
+
+-(void)setPlayer:(int)player
+{
+    _player = player;
+}
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

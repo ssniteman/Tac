@@ -90,7 +90,10 @@
         // y <= spotWH
         
         if (location.x >= 0 && location.y >= 0)
-            if (location.x <= spotWH && location.y <= spotWH) {
+            if (location.x <= spotWH && location.y <= spotWH)
+            {
+                
+                // change to spot.player
                 
                 if ([spot.backgroundColor isEqual:[UIColor lightGrayColor]]) {
                     
@@ -107,6 +110,9 @@
                     [self checkForWinner];
                 }
                 
+                
+                // uialertiew for winner or draw
+                
             }
             
         
@@ -116,6 +122,8 @@
     
 }
 
+
+/*
 - (void)checkForWinner
 {
     // if 0, 1, 2 == same color... then color wins
@@ -150,6 +158,67 @@
         }
     }
 }
+*/
+
+
+///////////////////
+
+
+- (void)checkForWinner
+{
+    // if 0, 1, 2 == same color... then color wins
+    
+    
+    NSArray * spotTop = @[spots[0],spots[1],spots[2]];
+    NSArray * spotMiddle = @[spots[3],spots[4],spots[5]];
+    NSArray * spotBottom = @[spots[6],spots[7],spots[8]];
+    NSArray * spotLeft = @[spots[0],spots[3],spots[6]];
+    NSArray * spotMiddleLong = @[spots[1],spots[4],spots[7]];
+    NSArray * spotRight = @[spots[2],spots[5],spots[8]];
+    NSArray * spotSidewaysOne = @[spots[2],spots[4],spots[6]];
+    NSArray * spotSidewaysTwo = @[spots[0],spots[4],spots[8]];
+    
+    NSArray * solutions = @[spotTop,spotMiddle,spotBottom,spotLeft,spotMiddleLong,spotRight,spotSidewaysOne,spotSidewaysTwo];
+    
+    for (NSArray * solution in solutions) {
+        
+        
+        UIView * spot0 = spots[[solution[0] intValue]];
+        UIView * spot1 = spots[[solution[1] intValue]];
+        UIView * spot2 = spots[[solution[2] intValue]];
+        
+        if ([spot0.backgroundColor isEqual:spot1.backgroundColor] && [spot1.backgroundColor isEqual:spot2.backgroundColor])
+        {
+            if ([spot0.backgroundColor isEqual:[UIColor cyanColor]])
+            {
+                
+                    NSLog(@"player 1 wins");
+            } else ([spot0.backgroundColor isEqual: [UIColor cyanColor]]); {
+                
+                NSLog(@"player 2 wins");
+                
+            }
+        }
+        
+//        for (UIView * spot in solution) {
+//            
+//            if (spot.color == [UIColor magentaColor]) {
+//                
+//                NSLog(@"player 1 wins");
+//                
+//            } else (spot.color == [UIColor cyanColor]) {
+//                
+//                 NSLog(@"player 2 wins");
+//                
+//            }
+//        
+//        }
+    }
+    
+
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
