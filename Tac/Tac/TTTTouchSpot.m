@@ -10,6 +10,10 @@
 
 @implementation TTTTouchSpot
 
+{
+    UIImageView * imageView;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -17,6 +21,11 @@
         // Initialization code
         
         // add a uiimageview
+        
+        imageView  = [[UIImageView alloc] initWithFrame:self.bounds];
+        
+        [self addSubview:imageView];
+        
     }
     return self;
 }
@@ -27,6 +36,20 @@
 -(void)setPlayer:(int)player
 {
     _player = player;
+    
+     // designating icons to players//
+    
+    switch (player) {
+        case 0:
+            imageView.image = [UIImage imageNamed:@"spot"];
+            break;
+        case 1:
+            imageView.image = [UIImage imageNamed:@"x"];
+            break;
+        case 2:
+            imageView.image = [UIImage imageNamed:@"circle"];
+            break;
+    }
 }
 
 

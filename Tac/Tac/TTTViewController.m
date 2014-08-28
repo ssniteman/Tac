@@ -8,16 +8,14 @@
 
 #import "TTTViewController.h"
 #import "TTTTouchSpot.h"
+#import "TTTGameData.h"
 
-@interface TTTViewController ()
+@interface TTTViewController () <UIAlertViewDelegate>
 
 @end
 
 @implementation TTTViewController
 {
-    NSMutableArray * spots;
-    
-    BOOL player1Turn;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -26,9 +24,7 @@
     if (self) {
         // Custom initialization
         
-        spots = [@[] mutableCopy];
         
-        player1Turn = YES;
     }
     return self;
 }
@@ -59,13 +55,15 @@
             int x = (spotWH + padding) * col + spacingW;
             int y = (spotWH + padding) * row + spacingH;
             
-            UIView * spot = [[UIView alloc] initWithFrame:CGRectMake(x, y, spotWH, spotWH)];
+            TTTTouchSpot * spot = [[TTTTouchSpot alloc] initWithFrame:CGRectMake(x, y, spotWH, spotWH)];
             
             spot.backgroundColor = [UIColor lightGrayColor];
             
+            spot.player = 0;
+            
             [self.view addSubview:spot];
             
-            [spots addObject:spot];
+            [[TTTGameData mainData].spots addObject:spot];
             
         }
     }
@@ -79,7 +77,7 @@
     
     UITouch * touch = [touches allObjects][0];
     int spotWH = 80;
-    for (UIView * spot in spots)
+    for (UIView * spot in [TTTGameData mainData].spots)
     {
         CGPoint location = [touch locationInView:spot];
         
@@ -100,14 +98,15 @@
                     // spot touched
                     NSLog(@"%@",spot);
                     
-                    UIColor * color = (player1Turn) ? [UIColor cyanColor] :
+                    UIColor * color = ([TTTGameData mainData].player1Turn) ? [UIColor cyanColor] :
                     [UIColor magentaColor];
                     
                     spot.backgroundColor = color;
                     
-                    player1Turn = !player1Turn;
+                    [TTTGameData mainData].player1Turn = ![TTTGameData mainData].player1Turn;
                     
-                    [self checkForWinner];
+                    [[TTTGameData mainData] checkForWinner];
+                    
                 }
                 
                 
@@ -120,102 +119,6 @@
     }
     
     
-}
-
-
-/*
-- (void)checkForWinner
-{
-    // if 0, 1, 2 == same color... then color wins
-    
-    UIView * spot0 = spots[0];
-    UIView * spot1 = spots[1];
-    UIView * spot2 = spots[2];
-    
-    if ([spot0.backgroundColor isEqual:spot1.backgroundColor] && [spot1.backgroundColor isEqual:spot2.backgroundColor])
-    {
-        if ([spot0.backgroundColor isEqual:[UIColor cyanColor]])
-        {
-            // then player 1 wins
-            
-            NSLog(@"player 1 wins");
-    
-        } else {
-            // player 2 wins
-            NSLog(@"player 2 wins");
-            
-            // make this work for every case
-            // 012
-            // 345
-            // 678
-            // 036
-            // 147
-            // 258
-            // 048
-            // 246
-            
-            // might result in another method
-        }
-    }
-}
-*/
-
-
-///////////////////
-
-
-- (void)checkForWinner
-{
-    // if 0, 1, 2 == same color... then color wins
-    
-    
-    NSArray * spotTop = @[spots[0],spots[1],spots[2]];
-    NSArray * spotMiddle = @[spots[3],spots[4],spots[5]];
-    NSArray * spotBottom = @[spots[6],spots[7],spots[8]];
-    NSArray * spotLeft = @[spots[0],spots[3],spots[6]];
-    NSArray * spotMiddleLong = @[spots[1],spots[4],spots[7]];
-    NSArray * spotRight = @[spots[2],spots[5],spots[8]];
-    NSArray * spotSidewaysOne = @[spots[2],spots[4],spots[6]];
-    NSArray * spotSidewaysTwo = @[spots[0],spots[4],spots[8]];
-    
-    NSArray * solutions = @[spotTop,spotMiddle,spotBottom,spotLeft,spotMiddleLong,spotRight,spotSidewaysOne,spotSidewaysTwo];
-    
-    for (NSArray * solution in solutions) {
-        
-        
-        UIView * spot0 = spots[[solution[0] intValue]];
-        UIView * spot1 = spots[[solution[1] intValue]];
-        UIView * spot2 = spots[[solution[2] intValue]];
-        
-        if ([spot0.backgroundColor isEqual:spot1.backgroundColor] && [spot1.backgroundColor isEqual:spot2.backgroundColor])
-        {
-            if ([spot0.backgroundColor isEqual:[UIColor cyanColor]])
-            {
-                
-                    NSLog(@"player 1 wins");
-            } else ([spot0.backgroundColor isEqual: [UIColor cyanColor]]); {
-                
-                NSLog(@"player 2 wins");
-                
-            }
-        }
-        
-//        for (UIView * spot in solution) {
-//            
-//            if (spot.color == [UIColor magentaColor]) {
-//                
-//                NSLog(@"player 1 wins");
-//                
-//            } else (spot.color == [UIColor cyanColor]) {
-//                
-//                 NSLog(@"player 2 wins");
-//                
-//            }
-//        
-//        }
-    }
-    
-
 }
 
 

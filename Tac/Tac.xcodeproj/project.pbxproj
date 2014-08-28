@@ -21,6 +21,10 @@
 		60503DE51987DAF8000C6A70 /* TacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60503DE41987DAF8000C6A70 /* TacTests.m */; };
 		60503DF11987DC27000C6A70 /* TTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60503DF01987DC27000C6A70 /* TTTViewController.m */; };
 		60503DF51987DD45000C6A70 /* TTTTouchSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = 60503DF41987DD45000C6A70 /* TTTTouchSpot.m */; };
+		6098F2E919891E8A00F7C9E9 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098F2E619891E8A00F7C9E9 /* circle.png */; };
+		6098F2EA19891E8A00F7C9E9 /* spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098F2E719891E8A00F7C9E9 /* spot.png */; };
+		6098F2EB19891E8A00F7C9E9 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6098F2E819891E8A00F7C9E9 /* x.png */; };
+		60CA1DD419AF755400175B43 /* TTTGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CA1DD319AF755400175B43 /* TTTGameData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,11 @@
 		60503DF01987DC27000C6A70 /* TTTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTViewController.m; path = Tac/TTTViewController.m; sourceTree = "<group>"; };
 		60503DF31987DD45000C6A70 /* TTTTouchSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTTouchSpot.h; path = Tac/TTTTouchSpot.h; sourceTree = "<group>"; };
 		60503DF41987DD45000C6A70 /* TTTTouchSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTTouchSpot.m; path = Tac/TTTTouchSpot.m; sourceTree = "<group>"; };
+		6098F2E619891E8A00F7C9E9 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../../Downloads/xo_files/circle.png; sourceTree = "<group>"; };
+		6098F2E719891E8A00F7C9E9 /* spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spot.png; path = ../../../../Downloads/xo_files/spot.png; sourceTree = "<group>"; };
+		6098F2E819891E8A00F7C9E9 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = x.png; path = ../../../../Downloads/xo_files/x.png; sourceTree = "<group>"; };
+		60CA1DD219AF755400175B43 /* TTTGameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTGameData.h; sourceTree = "<group>"; };
+		60CA1DD319AF755400175B43 /* TTTGameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTGameData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,11 @@
 		60503DB31987DAF8000C6A70 = {
 			isa = PBXGroup;
 			children = (
+				60CA1DD219AF755400175B43 /* TTTGameData.h */,
+				60CA1DD319AF755400175B43 /* TTTGameData.m */,
+				6098F2E619891E8A00F7C9E9 /* circle.png */,
+				6098F2E719891E8A00F7C9E9 /* spot.png */,
+				6098F2E819891E8A00F7C9E9 /* x.png */,
 				60503DEE1987DBC4000C6A70 /* Controllers */,
 				60503DC51987DAF8000C6A70 /* Tac */,
 				60503DDE1987DAF8000C6A70 /* TacTests */,
@@ -246,6 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6098F2E919891E8A00F7C9E9 /* circle.png in Resources */,
+				6098F2EA19891E8A00F7C9E9 /* spot.png in Resources */,
+				6098F2EB19891E8A00F7C9E9 /* x.png in Resources */,
 				60503DCA1987DAF8000C6A70 /* InfoPlist.strings in Resources */,
 				60503DD21987DAF8000C6A70 /* Images.xcassets in Resources */,
 			);
@@ -266,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CA1DD419AF755400175B43 /* TTTGameData.m in Sources */,
 				60503DF11987DC27000C6A70 /* TTTViewController.m in Sources */,
 				60503DCC1987DAF8000C6A70 /* main.m in Sources */,
 				60503DF51987DD45000C6A70 /* TTTTouchSpot.m in Sources */,
@@ -466,6 +484,7 @@
 				60503DEA1987DAF8000C6A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60503DEB1987DAF8000C6A70 /* Build configuration list for PBXNativeTarget "TacTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +493,7 @@
 				60503DED1987DAF8000C6A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
